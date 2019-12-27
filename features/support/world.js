@@ -11,24 +11,12 @@ Before(async function() {
 
 Before({ tags: "@mobile" }, async function() {
   const world = this;
-  await world._browser.close();
-  const browser = await puppeteer.launch({
-    defaultViewport: { width: 320, height: 466 }
-  });
-  const page = await browser.newPage();
-  world._browser = browser;
-  world.page = page;
+  world.page.setViewport({ width: 320, height: 466 });
 });
 
 Before({ tags: "@tablet" }, async function() {
   const world = this;
-  await world._browser.close();
-  const browser = await puppeteer.launch({
-    defaultViewport: { width: 768, height: 622 }
-  });
-  const page = await browser.newPage();
-  world._browser = browser;
-  world.page = page;
+  world.page.setViewport({ width: 768, height: 622 });
 });
 
 After(function() {

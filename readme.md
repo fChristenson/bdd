@@ -2,8 +2,8 @@
 
 ## What we will cover
 
-- What is BDD
-- How do you work in a BDD style
+- What is BDD?
+- How do you work in a BDD style?
 - What tools do you need?
 
 ## Notes

@@ -1,7 +1,6 @@
 const { Then, Given } = require("cucumber");
 
 Then("I should be on the {string} page", async function(string) {
-  this.page.awaitSelector;
   const el = await this.page.waitForSelector(`[data-test="${string}"]`);
   return !!el;
 });

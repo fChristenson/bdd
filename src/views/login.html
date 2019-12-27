@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body data-test="login">
+    <form action="/login" method="POST">
+      <input
+        placeholder="name"
+        type="text"
+        required
+        name="name"
+        pattern="\w{3,10}"
+        data-test="name"
+      />
+      <input
+        placeholder="password"
+        type="password"
+        required
+        name="password"
+        pattern="\w{3,10}"
+        data-test="password"
+      />
+      <input type="submit" data-test="login-btn" />
+    </form>
+  </body>
+</html>

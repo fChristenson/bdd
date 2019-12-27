@@ -4,5 +4,15 @@
     "comments": false,
     "strings": true
   },
-  "cucumberautocomplete.steps": ["features/**/*.js"]
+  "cucumberautocomplete.steps": [
+    "features/**/*.js"
+  ],
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ]
 }

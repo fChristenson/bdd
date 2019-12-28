@@ -19,6 +19,4 @@ Some rules to follow:
 - Do not try to write BDD tests for every possible feature, it will slow down your tests to a crawl
 - Write tests that simulate the most critical paths for a user, if broken the whole system is considered down
 - Create a strict convention for how you define steps and features, there will be a lot of them and it gets messy
-- Start every story that has critical functionality by defining rough feature files
-- End every story that has critical functionality by refining the files and implementing them
 - BDD tests should run before every release to production

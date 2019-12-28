@@ -23,6 +23,7 @@ Feature: Login
     And I enter <password> as my "password"
     When I click the "login-btn" button
     Then I should be on the "login" page
+
     Examples:
       | name                                   | password                                   |
       | "a"                                    | "bar"                                      |
